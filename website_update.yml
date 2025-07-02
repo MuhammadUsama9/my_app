@@ -1,0 +1,17 @@
+---
+- name: Ansible Playbook to Update the Website code on Remote Server
+  hosts: 192.168.37.135
+  
+  tasks:
+    - name: Copy the index.html file from cloned repo and paste to apache code directory
+      copy:
+        src: /var/lib/jenkins/workspace/my_website/index.html
+        dest: /var/www/html/index.html
+      become: true
+
+    - name: restart the service
+      service:
+        name: apache2
+        state: restarted
+      become: true
+
