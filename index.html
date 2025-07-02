@@ -5,60 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ModernApp</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
-    /* Optional: enable Tailwind dark mode toggle in the future */
-    html {
-      scroll-behavior: smooth;
+    body {
+      font-family: 'Inter', sans-serif;
     }
   </style>
 </head>
-<body class="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- Navbar -->
-  <header class="bg-white shadow-md">
+  <!-- Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-3xl font-bold text-indigo-600">🌟 ModernApp</h1>
-      <nav class="space-x-4">
-        <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Home</a>
-        <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium">Features</a>
-        <a href="#footer" class="text-gray-600 hover:text-indigo-600 font-medium">Contact</a>
+      <h1 class="text-2xl font-bold text-indigo-600">ModernApp</h1>
+      <nav class="space-x-6">
+        <a href="#features" class="text-gray-700 hover:text-indigo-600">Features</a>
+        <a href="#about" class="text-gray-700 hover:text-indigo-600">About</a>
+        <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="text-center py-24 bg-gradient-to-r from-indigo-500 to-pink-500 text-white">
-    <h2 class="text-5xl font-extrabold mb-4">Build Stunning Web Experiences</h2>
-    <p class="text-xl mb-6 max-w-2xl mx-auto">Launch faster with elegant UI, responsive layouts, and built-in utility-first CSS using Tailwind.</p>
-    <a href="#features" class="inline-block bg-white text-indigo-600 font-bold px-6 py-3 rounded-full hover:bg-gray-200 transition">Get Started</a>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white py-24">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h2 class="text-5xl font-extrabold mb-4">Empower Your Ideas Online</h2>
+      <p class="text-xl mb-6">Build modern, scalable, and fast websites with beautiful UI using Tailwind CSS.</p>
+      <a href="#features" class="bg-white text-indigo-600 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100 transition">Explore Features</a>
+    </div>
   </section>
 
   <!-- Features -->
-  <section id="features" class="py-20">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h3 class="text-4xl font-bold text-indigo-700 mb-10">✨ Key Features</h3>
-      <div class="grid gap-10 md:grid-cols-3">
-        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition transform hover:scale-105">
-          <div class="text-4xl mb-4 text-yellow-500">⚡</div>
-          <h4 class="text-xl font-bold text-gray-700 mb-2">Fast Performance</h4>
-          <p class="text-gray-600">Speed-optimized code and Tailwind make your site super fast.</p>
+  <section id="features" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center text-indigo-700 mb-12">🚀 Powerful Features</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-indigo-50 rounded-lg p-6 shadow hover:shadow-xl transition">
+          <div class="text-4xl mb-3">⚡</div>
+          <h4 class="text-xl font-semibold text-indigo-800 mb-2">Blazing Fast</h4>
+          <p class="text-gray-600">Lightning-quick performance with clean, optimized code using Tailwind.</p>
         </div>
-        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition transform hover:scale-105">
-          <div class="text-4xl mb-4 text-blue-500">📱</div>
-          <h4 class="text-xl font-bold text-gray-700 mb-2">Mobile Responsive</h4>
-          <p class="text-gray-600">Works great on phones, tablets, and desktops with no effort.</p>
+        <div class="bg-purple-50 rounded-lg p-6 shadow hover:shadow-xl transition">
+          <div class="text-4xl mb-3">📱</div>
+          <h4 class="text-xl font-semibold text-purple-800 mb-2">Responsive Design</h4>
+          <p class="text-gray-600">Built to look great on all screen sizes — mobile, tablet, and desktop.</p>
         </div>
-        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition transform hover:scale-105">
-          <div class="text-4xl mb-4 text-purple-500">🛠️</div>
-          <h4 class="text-xl font-bold text-gray-700 mb-2">Easy to Customize</h4>
-          <p class="text-gray-600">Tailwind utility classes make it easy to change layouts and colors.</p>
+        <div class="bg-pink-50 rounded-lg p-6 shadow hover:shadow-xl transition">
+          <div class="text-4xl mb-3">🎨</div>
+          <h4 class="text-xl font-semibold text-pink-800 mb-2">Stylish Layouts</h4>
+          <p class="text-gray-600">Clean, colorful designs to help you stand out and impress visitors.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gradient-to-br from-white to-indigo-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-indigo-700 mb-4">🧠 About ModernApp</h3>
+      <p class="text-lg text-gray-700">ModernApp is a starter template built with Tailwind CSS to help developers and designers get their projects off the ground faster with beautiful, functional UI components.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white border-t">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold text-indigo-700 mb-6">📬 Get in Touch</h3>
+      <p class="text-gray-700 mb-4">Have a question or want to collaborate? Reach out to us via email.</p>
+      <a href="mailto:hello@modernapp.com" class="inline-block bg-indigo-600 text-white py-3 px-6 rounded-full hover:bg-indigo-700 transition">Contact Us</a>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer id="footer" class="bg-indigo-700 text-white text-center py-6 mt-10">
+  <footer class="bg-indigo-700 text-white text-center py-6">
     <p>&copy; 2025 ModernApp. All rights reserved.</p>
   </footer>
 
