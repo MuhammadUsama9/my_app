@@ -3,111 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NovaLanding</title>
+    <title>SkyLaunch</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
     <style>
       body {
         font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
       }
     </style>
   </head>
-  <body class="bg-white text-gray-800">
+  <body class="text-gray-800">
 
     <!-- Navbar -->
-    <header class="shadow-md bg-white sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-extrabold text-indigo-600">NovaLanding</h1>
-        <nav class="space-x-6 text-sm font-medium">
-          <a href="#features" class="text-gray-700 hover:text-indigo-500">Features</a>
-          <a href="#pricing" class="text-gray-700 hover:text-indigo-500">Pricing</a>
-          <a href="#contact" class="text-gray-700 hover:text-indigo-500">Contact</a>
+    <header class="sticky top-0 bg-white/80 backdrop-blur shadow z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-extrabold text-sky-500">SkyLaunch</h1>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="#features" class="text-gray-700 hover:text-sky-500">Features</a>
+          <a href="#pricing" class="text-gray-700 hover:text-sky-500">Pricing</a>
+          <a href="#contact" class="text-gray-700 hover:text-sky-500">Contact</a>
         </nav>
       </div>
     </header>
 
     <!-- Hero -->
-    <section class="bg-gradient-to-tr from-indigo-600 to-purple-600 text-white py-28 px-6">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-5xl font-extrabold leading-tight mb-6">Launch Your Product with Confidence</h2>
-        <p class="text-lg mb-8">NovaLanding is a simple, fast, and responsive landing page template powered by Tailwind CSS.</p>
-        <a href="#features" class="bg-white text-indigo-600 font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition">
-          Discover Features
-        </a>
+    <section class="text-center py-28 px-6 bg-gradient-to-br from-sky-400 to-sky-600 text-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-5xl font-extrabold leading-tight mb-6">Launch Smarter. Launch Faster.</h2>
+        <p class="text-lg mb-8 opacity-90">A sleek, modern landing template that turns visitors into users with style and speed.</p>
+        <a href="#features" class="inline-block bg-white text-sky-600 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100 transition">Explore Features</a>
       </div>
     </section>
 
     <!-- Features -->
-    <section id="features" class="py-20 bg-gray-50">
+    <section id="features" class="py-24 bg-white">
       <div class="max-w-6xl mx-auto px-6 text-center">
-        <h3 class="text-3xl font-bold text-gray-800 mb-12">What We Offer</h3>
-        <div class="grid md:grid-cols-3 gap-10 text-left">
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <div class="text-indigo-600 text-4xl mb-4">🚀</div>
-            <h4 class="text-xl font-bold mb-2">Ultra Fast</h4>
-            <p>Speed is everything. Our layout is optimized for performance and minimal load time.</p>
+        <h3 class="text-3xl font-bold text-sky-600 mb-16">🚀 What Makes SkyLaunch Different</h3>
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition">
+            <div class="text-4xl text-sky-500 mb-4">⚡</div>
+            <h4 class="text-xl font-semibold mb-2">Lightning Speed</h4>
+            <p class="text-gray-600">Optimized for performance using minimal and efficient Tailwind code.</p>
           </div>
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <div class="text-purple-600 text-4xl mb-4">📱</div>
-            <h4 class="text-xl font-bold mb-2">Fully Responsive</h4>
-            <p>Seamless experience across mobile, tablet, and desktop screens with adaptive design.</p>
+          <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition">
+            <div class="text-4xl text-sky-500 mb-4">📱</div>
+            <h4 class="text-xl font-semibold mb-2">Mobile-First</h4>
+            <p class="text-gray-600">Looks stunning on smartphones, tablets, and desktops without extra tweaks.</p>
           </div>
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <div class="text-pink-600 text-4xl mb-4">🎨</div>
-            <h4 class="text-xl font-bold mb-2">Customizable</h4>
-            <p>Modify colors, layout, or sections quickly with clean utility classes and structure.</p>
+          <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition">
+            <div class="text-4xl text-sky-500 mb-4">🎯</div>
+            <h4 class="text-xl font-semibold mb-2">Conversion Ready</h4>
+            <p class="text-gray-600">Designed with CTA and marketing flow in mind to turn visitors into customers.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <h3 class="text-3xl font-bold mb-12 text-gray-800">Simple Pricing</h3>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="border rounded-xl p-8 shadow-sm hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2 text-indigo-600">Free Plan</h4>
-            <p class="text-gray-600 mb-4">For personal or hobby projects.</p>
-            <p class="text-3xl font-bold mb-6">$0</p>
-            <ul class="text-sm space-y-2 text-gray-600 mb-6">
-              <li>✔️ 1 Website</li>
-              <li>✔️ Community Support</li>
-              <li>✔️ Responsive Layout</li>
+    <section id="pricing" class="py-24 bg-gradient-to-tr from-white to-sky-50">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-16 text-sky-600">💸 Simple Pricing</h3>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="border border-sky-100 bg-white rounded-xl p-8 shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-bold text-sky-500 mb-2">Starter</h4>
+            <p class="text-gray-500 mb-4">Perfect for individuals or small teams</p>
+            <p class="text-4xl font-extrabold mb-6">$0</p>
+            <ul class="text-sm text-gray-600 space-y-2 mb-6">
+              <li>✅ Unlimited visitors</li>
+              <li>✅ Basic analytics</li>
+              <li>✅ Community support</li>
             </ul>
-            <a href="#" class="inline-block bg-indigo-600 text-white py-2 px-6 rounded-full hover:bg-indigo-700 transition">Get Started</a>
+            <a href="#" class="inline-block bg-sky-500 text-white px-6 py-2 rounded-full hover:bg-sky-600 transition">Start Free</a>
           </div>
-
-          <div class="border rounded-xl p-8 shadow-sm hover:shadow-lg transition bg-indigo-50">
-            <h4 class="text-xl font-semibold mb-2 text-indigo-700">Pro Plan</h4>
-            <p class="text-gray-700 mb-4">Perfect for businesses and startups.</p>
-            <p class="text-3xl font-bold mb-6">$29/mo</p>
-            <ul class="text-sm space-y-2 text-gray-700 mb-6">
-              <li>✔️ Unlimited Projects</li>
-              <li>✔️ Premium Support</li>
-              <li>✔️ Custom Integrations</li>
+          <div class="border border-sky-100 bg-sky-50 rounded-xl p-8 shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-bold text-sky-600 mb-2">Pro</h4>
+            <p class="text-gray-600 mb-4">For businesses and growing teams</p>
+            <p class="text-4xl font-extrabold mb-6">$29/mo</p>
+            <ul class="text-sm text-gray-700 space-y-2 mb-6">
+              <li>✅ All Starter features</li>
+              <li>✅ Custom domains</li>
+              <li>✅ Priority support</li>
             </ul>
-            <a href="#" class="inline-block bg-indigo-700 text-white py-2 px-6 rounded-full hover:bg-indigo-800 transition">Start Pro Trial</a>
+            <a href="#" class="inline-block bg-sky-600 text-white px-6 py-2 rounded-full hover:bg-sky-700 transition">Go Pro</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-20 bg-gray-100">
+    <section id="contact" class="py-24 bg-white">
       <div class="max-w-3xl mx-auto px-6 text-center">
-        <h3 class="text-3xl font-bold mb-6 text-gray-800">Get In Touch</h3>
-        <p class="mb-6 text-gray-600">Questions or feedback? We'd love to hear from you.</p>
-        <a href="mailto:hello@novalanding.com" class="inline-block bg-indigo-600 text-white py-3 px-8 rounded-full hover:bg-indigo-700 transition">
-          📧 Email Us
+        <h3 class="text-3xl font-bold text-sky-600 mb-4">📬 Let's Talk</h3>
+        <p class="mb-6 text-gray-600">Have a question or want to work together? Drop us a message anytime.</p>
+        <a href="mailto:hello@skylaunch.dev" class="inline-block bg-sky-600 text-white py-3 px-8 rounded-full hover:bg-sky-700 transition">
+          Send Email
         </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-t py-6 text-center text-sm text-gray-500">
-      &copy; 2025 NovaLanding. Crafted with ❤️ using Tailwind CSS.
+    <footer class="bg-sky-600 text-white text-center text-sm py-6">
+      &copy; 2025 SkyLaunch. Built with Tailwind. All rights reserved.
     </footer>
-
   </body>
 </html>
